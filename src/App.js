@@ -9,6 +9,10 @@ import Register from './components/Register';
 import ProtectedRoute from './components/ProtectedRoute';
 import { clearError } from './store/slices/authSlice';
 import Dashboard from './components/Dashboard';
+import AdvancedDragDropTable from './components/AdvancedDragDropTable';
+import DragAndDropBoard from './components/DndBoard';
+import DragAndDropFormBuilder from './components/DragDropForm';
+import MultiTabForm from './components/UserForm';
 
 function App() {
    const { isAuthenticated, error } = useSelector((state) => state.auth);
@@ -60,9 +64,33 @@ function App() {
        <Route 
           path="/UserForm" 
           element={
-            <ProtectedRoute>
-              <UserForm />
-            </ProtectedRoute>
+            // <ProtectedRoute>
+              <MultiTabForm />
+            // </ProtectedRoute>
+          } 
+        />
+         <Route 
+          path="/AdvancedndTable" 
+          element={
+            // <ProtectedRoute>
+              <AdvancedDragDropTable />
+            // </ProtectedRoute>
+          } 
+        />
+         <Route 
+          path="/DndForm" 
+          element={
+            // <ProtectedRoute>
+              <DragAndDropFormBuilder />
+            // </ProtectedRoute>
+          } 
+        />
+         <Route 
+          path="/Dndboard" 
+          element={
+            // <ProtectedRoute>
+              <DragAndDropBoard />
+            // </ProtectedRoute>
           } 
         />
          <Route 
