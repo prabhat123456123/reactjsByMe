@@ -186,6 +186,111 @@ const AdvancedDragDropTable = () => {
 </div>
 </Col>
 </Row>
+  <Row className="gx-2">
+                <Col md={4} className="d-flex justify-content-center">
+                
+     <div className="card">
+  {/* Image */}
+ 
+
+  {/* Content */}
+  <div className="card-body">
+    <h5 className="card-title fw-semibold">John Doe</h5>
+
+    <div className="d-flex flex-wrap align-items-center mt-3">
+
+      {/* Email */}
+      <div className="d-flex align-items-center border-end pe-3 me-3 mb-2">
+        <span className="fw-semibold">📧</span>
+        <span className="ms-1">john@example.com</span>
+      </div>
+
+      {/* Phone */}
+      <div className="d-flex align-items-center border-end pe-3 me-3 mb-2">
+        <span className="fw-semibold">📞</span>
+        <span className="ms-1">9876543210</span>
+      </div>
+
+      {/* Address */}
+      <div className="d-flex align-items-center mb-2">
+        <span className="fw-semibold">📍</span>
+        <span className="ms-1">Delhi, India</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+</Col>
+
+<Col md={4} className="d-flex justify-content-center">
+ <div className="vertical-divider"></div>
+     <div className="card" >
+  {/* Image */}
+ 
+
+  {/* Content */}
+  <div className="card-body">
+    <h5 className="card-title fw-semibold">John Doe</h5>
+
+    <div className="d-flex flex-wrap align-items-center mt-3">
+
+      {/* Email */}
+      <div className="d-flex align-items-center border-end pe-3 me-3 mb-2">
+        <span className="fw-semibold">📧</span>
+        <span className="ms-1">john@example.com</span>
+      </div>
+
+      {/* Phone */}
+      <div className="d-flex align-items-center border-end pe-3 me-3 mb-2">
+        <span className="fw-semibold">📞</span>
+        <span className="ms-1">9876543210</span>
+      </div>
+
+      {/* Address */}
+      <div className="d-flex align-items-center mb-2">
+        <span className="fw-semibold">📍</span>
+        <span className="ms-1">Delhi, India</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+</Col>
+<Col md={4} className="d-flex justify-content-center">
+ <div className="vertical-divider"></div>
+     <div className="card" >
+  {/* Image */}
+  
+
+  {/* Content */}
+  <div className="card-body">
+    <h5 className="card-title fw-semibold">John Doe</h5>
+
+    <div className="d-flex flex-wrap align-items-center mt-3">
+
+      {/* Email */}
+      <div className="d-flex align-items-center border-end pe-3 me-3 mb-2">
+        <span className="fw-semibold">📧</span>
+        <span className="ms-1">john@example.com</span>
+      </div>
+
+      {/* Phone */}
+      <div className="d-flex align-items-center border-end pe-3 me-3 mb-2">
+        <span className="fw-semibold">📞</span>
+        <span className="ms-1">9876543210</span>
+      </div>
+
+      {/* Address */}
+      <div className="d-flex align-items-center mb-2">
+        <span className="fw-semibold">📍</span>
+        <span className="ms-1">Delhi, India</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+</Col>
+</Row>
       <h2>Advanced Drag & Drop Table</h2>
       
       <Formik
@@ -355,6 +460,16 @@ const AdvancedDragDropTable = () => {
         tr:active {
           cursor: grabbing;
         }
+           
+        .vertical-divider {
+  width: 1px;
+  height: 60%;    /* reduce height */
+  background-color: #dee2e6; /* Bootstrap light border */
+  align-self: center; /* center vertically */
+  margin-right: 15px; /* spacing from card */
+}
+
+               
       `}</style>
     </div>
   );
